@@ -55,5 +55,7 @@ const controller = new ConcurrencyController(2) // 限制同时运行2个任务
 const tasks = [p1, p2, p3, p4, p5]
 
 tasks.forEach((task) => {
-  controller.addTask(task)
+  controller.addTask(task).then(res => {
+    console.log(res);
+  })
 })
