@@ -3,7 +3,7 @@
 function insertionSort(arr) {
 
   // 从第二个元素开始（索引1），因为第一个元素默认是已排序的
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 1; i < arr.length; i++) {
 
     // 当前要插入的元素（从桌上拿起的牌）
     let cur = arr[i]
